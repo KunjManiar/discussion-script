@@ -1085,6 +1085,8 @@ const send_data = () => {
       console.log("Device control failed");
     },
   });
+  $("#getCroppedCanvasModal").modal("hide");
+  $("#exampleModal").modal("hide");
 };
 
 // function a(x) {
