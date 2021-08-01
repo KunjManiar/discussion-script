@@ -1073,7 +1073,7 @@ const send_data = () => {
 
   $.ajax({
     type: "POST",
-    url: "http://discussion-board-kunj.meteorapp.com/api/new-discussion",
+    url: "https://discussion-board-kunj.meteorapp.com/api/new-discussion",
     data: fd,
     processData: false,
     contentType: false,
