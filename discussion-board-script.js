@@ -69,7 +69,7 @@ function jQueryCode(runnerFunc) {
           href="https://unpkg.com/cropperjs/dist/cropper.css"
           crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://kunjmaniar.github.io/discussion-script/css/main.css" />
       `,
 		);
 
