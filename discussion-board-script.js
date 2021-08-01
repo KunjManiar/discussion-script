@@ -1041,7 +1041,10 @@ const send_data = () => {
   const heading = $("#new-discussion-heading").val();
   const text = $("#new-discussion-text").val();
   const title = $("title").html();
-  console.log(title);
+  const script = $("#meteor-discussion-script");
+  // console.log(script)
+  const meta = script.attr("meta");
+
   function dataURLtoBlob(dataURL) {
     let array, binary, i, len;
     binary = atob(dataURL.split(",")[1]);
@@ -1066,10 +1069,11 @@ const send_data = () => {
   fd.append("upl", test, title + ".jpeg");
   fd.append("heading", heading);
   fd.append("text", text);
+  fd.append("token", meta);
 
   $.ajax({
     type: "POST",
-    url: "http://localhost:4000/kunj-test-file-upload",
+    url: "http://discussion-board-kunj.meteorapp.com/api/new-discussion",
     data: fd,
     processData: false,
     contentType: false,
